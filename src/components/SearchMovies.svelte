@@ -18,8 +18,8 @@
 <form class="search" on:submit|preventDefault={submitSearch}>
 	{#if !active}
 		<label
-			in:fly={{ y: -10, duration: 500 }}
-			out:fly={{ y: -10, duration: 500 }}
+			in:fly={{ y: -10, duration: 100 }}
+			out:fly={{ y: -10, duration: 100 }}
 			for="search_movie"
 		>
 			Search Movie
@@ -34,7 +34,7 @@
 		class={active ? 'selected' : ''}
 	/>
 	{#if inputValue}
-		<button out:fly={{ x: 0, duration: 500 }} in:fly={{ x: 20, duration: 500 }}>Search</button>
+		<button out:fly={{ x: 0, duration: 100 }} in:fly={{ x: 20, duration: 100 }}>Search</button>
 	{/if}
 </form>
 

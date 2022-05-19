@@ -22,7 +22,7 @@
 	import { fly } from 'svelte/transition';
 </script>
 
-<section in:fly={{ y: 50, duration: 500, delay: 500 }} out:fly={{ duration: 500 }}>
+<section in:fly={{ y: 50, duration: 100, delay:100 }} out:fly={{ duration: 100 }}>
 	<SearchMovies />
 	<PopularMovies {popular} />
 </section>
