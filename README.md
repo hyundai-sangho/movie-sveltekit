@@ -9,3 +9,5 @@
 5. Back: 사용 안 함
 
 6. ![default](screenshot.gif)
+
+7. https://movie-sveltekits2-cplvkdjwo-hyundai-sangho.vercel.app/search/game
