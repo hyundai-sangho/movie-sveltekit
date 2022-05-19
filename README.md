@@ -1,38 +1,13 @@
-# create-svelte
+1. 작성일: 2022년 5월 20일(목)
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+2. SvelteKit으로 만드는 영화 검색 앱(tmdb 영화 api 사용)
 
-## Creating a project
+3. https://www.youtube.com/watch?v=ydR_M0fw9Xc&t=2503s
 
-If you're seeing this, you've probably already done this step. Congrats!
+4. Front: SvelteKit 프레임워크
 
-```bash
-# create a new project in the current directory
-npm init svelte
+5. Back: 사용 안 함
 
-# create a new project in my-app
-npm init svelte my-app
-```
+6. ![default](screenshot.gif)
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+7.

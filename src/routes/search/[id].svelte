@@ -2,7 +2,9 @@
 	import SearchMovies from './../../components/SearchMovies.svelte';
 	export async function load({ params }) {
 		const res = await fetch(
-			`https://api.themoviedb.org/3/search/movie?api_key=d5c35e51c81488b19da7c1f572507a3d&language=en-US&query=${params.id}&page=1&include_adult=false`
+			`https://api.themoviedb.org/3/search/movie?api_key=${
+				import.meta.env.VITE_MOVIE_API
+			}&language=en-US&query=${params.id}&page=1&include_adult=false`
 		);
 
 		const data = await res.json();
