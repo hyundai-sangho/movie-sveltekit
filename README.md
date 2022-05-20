@@ -12,4 +12,4 @@
 
 7. ![default](screenshot.gif)
 
-8. https://movie-sveltekits2-cplvkdjwo-hyundai-sangho.vercel.app/search/game
+8. https://movie-sveltekit.vercel.app
