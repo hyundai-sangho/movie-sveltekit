@@ -3,7 +3,7 @@
 		console.log(params.id);
 		const res = await fetch(
 			`https://api.themoviedb.org/3/movie/${params.id}?api_key=${
-				import.meta.env.VITE_API
+				import.meta.env.VITE_MOVIE_API
 			}&language=en-US&page=1`
 		);
 
