@@ -29,10 +29,14 @@
 	out:fly={{ duration: 100 }}
 >
 	<div class="img-container">
-		<img
-			src={'https://image.tmdb.org/t/p/original' + movieDetail.backdrop_path}
-			alt={movieDetail.title}
-		/>
+		{#if movieDetail.backdrop_path}
+			<img
+				src={'https://image.tmdb.org/t/p/original' + movieDetail.backdrop_path}
+				alt={movieDetail.title}
+			/>
+		{:else}
+			<h2 style="color:red;">[배경 이미지가 없습니다.]</h2>
+		{/if}
 	</div>
 	<div class="txt-container">
 		<h1>{movieDetail.title}</h1>

@@ -1,14 +1,12 @@
 <script>
 	export let movie;
+
+	console.log('포스터 값 : ' + movie.poster_path);
 </script>
 
 <div class="movie-card">
 	<a sveltekit:prefetch sveltekit:noscroll href={'/movie/' + movie.id}>
-		{#if movie.poster_path}
-			<img src={'https://image.tmdb.org/t/p/w500' + movie.poster_path} alt={movie.title} />
-		{:else}
-			<h2>포스터 이미지가 없습니다.</h2>
-		{/if}
+		<img src={'https://image.tmdb.org/t/p/w500' + movie.poster_path} alt={movie.title} />
 	</a>
 	<div class="description">
 		<h2>{movie.title}</h2>
