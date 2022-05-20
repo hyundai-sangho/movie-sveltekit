@@ -24,11 +24,17 @@
 </script>
 
 <div class="searched-movies">
-	{#each searchedMovie as movie}
-		{#if movie.poster_path}
-			<MovieCard {movie} />
-		{/if}
-	{/each}
+	{#if searchedMovie == ''}
+		<div style="margin:0 auto">
+			<h2 style="color:red">관련 영화가 없습니다.</h2>
+		</div>
+	{:else}
+		{#each searchedMovie as movie}
+			{#if movie.poster_path}
+				<MovieCard {movie} />
+			{:else}{/if}
+		{/each}
+	{/if}
 </div>
 
 <style>
