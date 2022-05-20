@@ -4,7 +4,11 @@
 
 <div class="movie-card">
 	<a sveltekit:prefetch sveltekit:noscroll href={'/movie/' + movie.id}>
-		<img src={'https://image.tmdb.org/t/p/w500' + movie.poster_path} alt={movie.title} />
+		{#if movie.poster_path}
+			<img src={'https://image.tmdb.org/t/p/w500' + movie.poster_path} alt={movie.title} />
+		{:else}
+			<h2>포스터 이미지가 없습니다.</h2>
+		{/if}
 	</a>
 	<div class="description">
 		<h2>{movie.title}</h2>
